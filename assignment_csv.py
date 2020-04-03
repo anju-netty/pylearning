@@ -15,6 +15,8 @@ with open("devices.txt",'r') as csvfile:
         configlist.append(row)
         num_of_rows = num_of_rows + 1 # count the number of rows
 
+print(configlist)
+
 with open ("devicelist.csv","w+") as cf:
     writer = csv.writer(cf,delimiter=",",)
     writer.writerow(["Device Name", "Ipadress", "Username", "Password"]) #Title of columns
@@ -24,4 +26,5 @@ with open ("devicelist.csv","w+") as cf:
             #For loop to traverse through the column. If I use configlist[x][y] directly use in writer
             #it will write every item in a different line.
             col.append(configlist[x][y]) 
+        print(col)
         writer.writerow(col) #this is a row

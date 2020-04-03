@@ -1,0 +1,3 @@
+interface fastEthernet 0/0
+ip ospf authentication
+ip ospf authentication-key pass1
