@@ -27,6 +27,7 @@ pop2 = s1.pop()
 s2.push(pop1)
 s3.push(pop2)
 
+
 print("S1 : {}  S2: {} S3 : {}".format( s1.view_stack(),s2.view_stack(),s3.view_stack()))
 
 
